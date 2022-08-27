@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-LIBRARIES="libuchardet libfribidi libfreetype libharfbuzz libass ffmpeg libmpv"
+LIBRARIES="libuchardet libfribidi libfreetype libharfbuzz libass fontconfig libbluray ffmpeg libmpv"
 OPENSSL="$(pwd)/openssl-ios"
 
 export PKG_CONFIG_PATH
@@ -104,6 +104,12 @@ for ARCH in $ARCHS; do
 				;;
             "libuchardet" )
 				mkdir -p $SCRATCH/$ARCH/uchardet && cd $_ && $SCRIPTS/uchardet-build
+				;;
+            "fontconfig" )
+				mkdir -p $SCRATCH/$ARCH/fontconfig && cd $_ && $SCRIPTS/fontconfig-build
+				;;
+            "libbluray" )
+				mkdir -p $SCRATCH/$ARCH/libbluray && cd $_ && $SCRIPTS/libbluray-build
 				;;
             "ffmpeg" )
 				mkdir -p $SCRATCH/$ARCH/ffmpeg && cd $_ && $SCRIPTS/ffmpeg-build

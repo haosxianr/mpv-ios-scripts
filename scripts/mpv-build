@@ -12,7 +12,7 @@ OPTS="--prefix=$SCRATCH/$ARCH \
 	--enable-ios-gl \
 	--enable-gl \
 	--disable-javascript \
-	--disable-libbluray \
+	--enable-libbluray \
 	--disable-vapoursynth \
 	--enable-uchardet \
 	--enable-lgpl"

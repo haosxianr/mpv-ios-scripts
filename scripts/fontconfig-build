@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+
+$SRC/fontconfig*/configure $COMMON_OPTIONS
+
+make install

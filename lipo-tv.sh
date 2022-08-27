@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-LIBRARIES="libuchardet libfribidi libfreetype libharfbuzz libass ffmpeg libmpv libavcodec libavdevice libavfilter libavformat libavutil libswresample libswscale"
+LIBRARIES="libuchardet libfribidi libfreetype libharfbuzz libass ffmpeg libmpv libavcodec libavdevice libavfilter libavformat libavutil libswresample libswscale libfontconfig libbluray"
 OPENSSL="$(pwd)/openssl-tv"
 ROOT="$(pwd)"
 SCRATCH="$ROOT/scratch-tv"
